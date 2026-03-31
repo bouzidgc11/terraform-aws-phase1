@@ -21,7 +21,7 @@ output "sg_public_id" {
 output "sg_private_id" {
   description = "ID du Security Group prive"
   value       = aws_security_group.private.id
-}   
+}
 
 
 output "rds_endpoint" {
