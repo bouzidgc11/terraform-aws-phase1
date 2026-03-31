@@ -9,4 +9,4 @@ crash.log
 
 # Clés SSH
 *.pem
-*.key
+*.key   
