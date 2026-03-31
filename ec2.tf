@@ -10,7 +10,7 @@ data "aws_ami" "amazon_linux" {
 
 resource "aws_key_pair" "phase1" {
   key_name   = "phase1-key"
-  public_key = file("~/.ssh/phase1-key.pub")
+  public_key = var.public_key
 
   tags = {
     Name      = "phase1-key"
