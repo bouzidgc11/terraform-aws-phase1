@@ -26,7 +26,7 @@ resource "aws_db_instance" "main" {
   allocated_storage      = 20
   db_name                = "phase1db"
   username               = "admindb"
-  password               = "MotDePasse123!"
+  password               = var.db_password
   db_subnet_group_name   = aws_db_subnet_group.main.name
   vpc_security_group_ids = [aws_security_group.private.id]
   parameter_group_name   = aws_db_parameter_group.postgres.name
