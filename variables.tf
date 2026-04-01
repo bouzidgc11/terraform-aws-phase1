@@ -4,6 +4,6 @@ variable "public_key" {
 }
 
 variable "db_password" {
-  type = string
+  type        = string
   description = "mot de passe RDS"
 }
